@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity 1</title>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <script>
+            var str="Kareem Abdul-Jabbar";
+            document.getElementById("p1").innerHTML=str.toUpperCase();
+            document.getElementById("p2").innerHTML=str.toLowerCase();
+            document.getElementById("p3").innerHTML=str.startsWith("k");
+            var patt=new RegExp("ing");
+            document.getElementById("p4").innerHTML=patt.test(str);
+            document.getElementById("p5").innerHTML=Math.floor(Math.random()*100);
+        </script>
+    </body>
+
+</html>
